@@ -1,0 +1,22 @@
+/*Выполнил студент группы П3-19
+ Артамонов Георгий Александрович
+(13) Задание 1. 
+Используя typedef, определить новые имена для всех стандартных типов.
+ Объявить несколько переменных новых типов данных,
+ задать им значения, вывести на экран.*/
+#include <stdio.h>
+int main()
+{
+typedef int int1;
+typedef double double1;
+typedef char char1;
+typedef float float1;
+int1 a;
+double1 b;
+char1 c[]="chislo pi";
+float1 d;
+a=3;
+d=3.14;
+b=3.1415926535;
+printf("%d\n%0.2f\n%0.10f\n%s",a,d,b,c);
+}
