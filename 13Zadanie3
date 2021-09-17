@@ -1,0 +1,35 @@
+/*Выполнил студент П3-19
+Артамонов Георгий Александрович
+(13) Задание 3
+Ввести с клавиатуры номер дня недели. 
+Вывести на экран его название, 
+Использовать перечисление (enum). 
+*/
+#include <stdio.h>
+
+enum Nedelya {NaPonedelnik, NaVtornik, NaSreda, NaChetverg, NaPyatnica, NaSybbota, NaVoskresenye } Na;
+
+int main()
+{
+int Na;
+
+printf("vvedite nomer nedelyi: ");
+scanf("%d", &Na);
+
+if(Na == 1)
+printf("Ponedelnik");
+else if(Na == 2)
+printf("vtornik");
+else if(Na == 3)
+printf("Sreda");
+else if(Na == 4)
+printf("Chetverg");
+else if(Na == 5)
+printf("Pyatnica");
+else if(Na == 6)
+printf("Sybbota");
+else if(Na == 7)
+printf("Voskresenye");
+else
+printf("nety");
+}
