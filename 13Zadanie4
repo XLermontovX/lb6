@@ -1,0 +1,45 @@
+/* Выполнил студент П3-19
+Артамонов Георгий Александрович
+(13) Задание 4 
+Определить структурный тип address. 
+(Улица, дом, квартира)
+Внести указатель на тип adress. 
+Выделить память для хранения информации.
+Проинициализировать. Вывести на экран
+*/
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+struct adress
+{
+char ylica;
+int dom;
+int kvartira;
+};
+typedef struct adress drygoiAdress;
+
+int main()
+{
+typedef char ylica;
+typedef int dom;
+typedef int kvartira;
+
+ylica yl[40] = "Pionerskaya" ;
+dom y = 7;
+kvartira z = 34;
+
+drygoiAdress p;
+drygoiAdress *dA = 0;
+dA = &p;
+if (dA != 0)
+
+{
+(*dA).dom = 3;
+(*dA).kvartira = 22;
+}
+
+printf("ylica %s\n dom %d\n kvartira %d", yl, p.dom, p.kvartira);
+return 0;
+}
